@@ -1,5 +1,5 @@
 
-module.exports = function Node(value, nextNode) {
+function Node(value, nextNode) {
 
 	function getValue() {
 		return value;

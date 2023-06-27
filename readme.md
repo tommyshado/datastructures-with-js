@@ -1,18 +1,32 @@
 # Linked lists in JavaScript
 
-* -> add(e)
-* addLast(e)
-* -> clear()
-* -> contains(o)
-* find(o)
+Learn about data structures implementing a Stack, Queue & finally a LinkedList.
 
-* -> first() -> return first value in the list
-* -> last() -> return the last value in the list
+Make these [tests](test/index.html) pass;
 
-* next() 
+Use the `Node` Factory function to create each of the respective data structures:
 
-* forEach (function(){
+```js
+function Node(value, nextNode) {
 
-})
-* -> count()
+	function getValue() {
+		return value;
+	}
 
+	function getNextNode() {
+		return nextNode;
+	}
+
+	function setNextNode(node) {
+		nextNode = node;
+		return nextNode;
+	}
+
+	return {
+		getValue,
+		getNextNode,
+		setNextNode
+	}
+
+}
+```

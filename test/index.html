@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.css" integrity="sha512-SjDc34mGAkSBKnNMasz1QPVustFyPQUHUO5wxzGNC5x9wQMcHwDHXCNRYowC/6DsX0lqvpCI1mKiVEQkws2olw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js" integrity="sha512-jsP/sG70bnt0xNVJt+k9NxQqGYvRrLzWhI+46SSf7oNJeCwdzZlBvoyrAN0zhtVyolGcHNh/9fEgZppG2pH+eA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js" integrity="sha512-Pwgr3yHn4Gvztp1GKl0ihhAWLZfqgp4/SbMt4HKW7AymuTQODMCNPE7v1uGapTeOoQQ5Hoz367b4seKpx6j7Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+
+    <script src="../stack.js" charset="utf-8"></script>
+    <script src="stack.test.js" charset="utf-8"></script>
+    
+    <script src="../queue.js" charset="utf-8"></script>
+    <script src="queue.test.js" charset="utf-8"></script>
+    <script src="linkedlist.test.js" charset="utf-8"></script>
+    
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>

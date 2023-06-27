@@ -10,6 +10,7 @@
 // how would u implement this using a linked list
 
 function Stack() {
+	
 	function push (value) {
 
 	}
