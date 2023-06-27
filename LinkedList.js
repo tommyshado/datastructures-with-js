@@ -1,6 +1,5 @@
-const Node = require('./node');
 
-module.exports = function LinkedList() {
+function LinkedList() {
 
 	let startNode = null;
 	let lastNode = null;
