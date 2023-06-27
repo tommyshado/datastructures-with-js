@@ -1,6 +1,6 @@
 describe("Using a stack", function(){
 
-    it("you should be able to push a value to the stack and get it back", function (){
+    it("you should be able to push values to the stack and get it back", function (){
 
         const stack = Stack();
         stack.push('cat');
