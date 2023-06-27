@@ -1,5 +1,16 @@
 describe("Using a stack", function(){
 
+    it("you should be able to push and pop 1 value", function (){
+
+        const stack = Stack();
+        
+        stack.push('cat');
+        assert.equal('cat', stack.pop());
+        assert.equal(undefined, stack.pop());
+
+    });
+
+
     it("you should be able to push values to the stack and get it back", function (){
 
         const stack = Stack();
