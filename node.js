@@ -1,5 +1,4 @@
-
-function Node(value, nextNode) {
+export default function Node(value, nextNode) {
 
 	function getValue() {
 		return value;
