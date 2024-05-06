@@ -1,5 +1,3 @@
-import LinkedList from "../LinkedList.js";
-
 describe("Using a LinkedList", function(){
 
     it("you should be able to add 1 value to a linked list", function (){

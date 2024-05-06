@@ -1,17 +1,15 @@
-import Node from "./node.js";
-
-export default function LinkedList() {
+function LinkedList() {
 
 	let startNode = null;
 	let lastNode = null;
 
 	function add(value) {
-		const newNode = Node(value);
+		const newNode = Node(value, null);
 		if (!startNode) {
 			startNode = newNode;
 			lastNode = startNode;
 		} else {
-			lastNode.setNextNode(value);
+			lastNode.setNextNode(newNode);
 			lastNode = newNode;
 		}
 	}
@@ -19,9 +17,9 @@ export default function LinkedList() {
 	function count() {
 		let counter = 0;
 		let currentNode = startNode;
-		while (currentNode.getNextNode() !== null) {
+		while (currentNode !== null) {
 			counter++;
-			currentNode = currentNode.getNextNode();
+            currentNode = currentNode.getNextNode();
 		}
 		return counter;
 	}
