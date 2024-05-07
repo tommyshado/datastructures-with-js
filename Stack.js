@@ -1,22 +1,13 @@
-
-// const stack = Stack();
-
-//stack.push("Andre");
-//stack.push("Busi");
-
-// console.log(stack.pop())   -- Busi
-// console.log(stack.pop())   -- Andre
-
-// how would u implement this using a linked list
-
 function Stack() {
+
+	let items = [];
 	
 	function push (value) {
-
+		items.push(value);
 	}
 
 	function pop() {
-
+		return items.pop();
 	}
 
 	return {

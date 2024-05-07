@@ -1,18 +1,20 @@
 function Queue() {
 
-	function enqueue(value) {
+	let items = [];
 
+	function enqueue(value) {
+		items.push(value);
 	}
 
 	function dequeue() {
-		// return a value
+		/*
+			remove the first item from the queue and return it
+		*/
+		return items.shift();
+	}
+
+	return {
+		enqueue,
+		dequeue
 	}
 }
-
-// const queue = Queue();
-
-// queue.enqueue("Andre")
-// queue.enqueue("Busi");
-
-// console.log(queue.dequeue())  -- Andre
-// console.log(queue.dequeue())  -- Busi
