@@ -10,7 +10,6 @@ function Node(value, nextNode) {
 
 	function setNextNode(node) {
 		nextNode = node;
-		return nextNode;
 	}
 
 	return {
