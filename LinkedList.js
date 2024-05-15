@@ -1,31 +1,29 @@
 function LinkedList() {
   let startNode = null;
   let lastNode = null;
+  let length = 0;
 
   function add(value) {
     const newNode = Node(value, null);
     if (!startNode) {
       startNode = newNode;
       lastNode = startNode;
+      length++;
     } else {
       lastNode.setNextNode(newNode);
       lastNode = newNode;
+      length++;
     }
   }
 
   function count() {
-    let counter = 0;
-    let currentNode = startNode;
-    while (currentNode !== null) {
-      counter++;
-      currentNode = currentNode.getNextNode();
-    }
-    return counter;
+    return length;
   }
 
   function clear() {
     startNode = null;
     lastNode = null;
+    length = 0;
   }
 
   function contains(value) {
