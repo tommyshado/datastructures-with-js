@@ -1,24 +1,33 @@
+/**
+ * Stack data structure implementation.
+ * @constructor
+ */
 function Stack() {
   let head = null;
 
+  /**
+   * Adds a new element to the top of the stack.
+   * @param {any} value - The value to be added to the stack.
+   */
   function push(value) {
     const newNode = Node(value, null);
     if (!head) {
       head = newNode;
     } else {
-      // Set the next node to be the start node
       newNode.setNextNode(head);
       head = newNode;
     }
   }
 
+  /**
+   * Removes and returns the top element from the stack.
+   * @returns {any} The value of the removed element.
+   */
   function pop() {
     if (!head) {
       return null;
     }
-    // Get the first node head
     let value = head.getValue();
-    // Get the next node
     head = head.getNextNode();
     return value;
   }
